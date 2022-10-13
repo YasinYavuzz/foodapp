@@ -67,6 +67,7 @@ flutter:
     - assets/categoriesassets/search/
     - assets/categoriesassets/banner/
     - assets/categoriesassets/categorieslistviewitem/
+    - assets/categoriesassets/restaurantlistviewitem/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
