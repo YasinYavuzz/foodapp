@@ -6,8 +6,8 @@ import 'package:foodapp/widgets/categorieswidget/restaurantlistviewitem/restaura
 import 'package:foodapp/widgets/categorieswidget/restaurantlistviewitem/restaurantstar/restaurantstartext.dart';
 
 class RestaurantStar extends StatefulWidget {
-  const RestaurantStar({super.key});
-
+  RestaurantStar({super.key,required this.listindex});
+  final listindex;
   @override
   State<RestaurantStar> createState() => _RestaurantStarState();
 }
@@ -22,7 +22,7 @@ class _RestaurantStarState extends State<RestaurantStar> {
       child: Row(
         children: [
           RestaurantStarIcon(),
-          RestaurantStarText()
+          RestaurantStarText(listindex: widget.listindex,)
         ],
       ),
 

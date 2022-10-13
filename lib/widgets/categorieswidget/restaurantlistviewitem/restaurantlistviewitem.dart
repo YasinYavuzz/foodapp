@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:foodapp/widgets/categorieswidget/restaurantlistviewitem/restaurantimage.dart';
+import 'package:foodapp/widgets/categorieswidget/restaurantlistviewitem/restaurantnew/restaurantnew.dart';
 import 'package:foodapp/widgets/categorieswidget/restaurantlistviewitem/restaurantorder/restaurantorder.dart';
 import 'package:foodapp/widgets/categorieswidget/restaurantlistviewitem/restaurantstar/restaurantstar.dart';
 import 'package:foodapp/widgets/categorieswidget/restaurantlistviewitem/restauranttitle.dart';
 
 class RestaurantListViewItem extends StatefulWidget {
-  const RestaurantListViewItem({super.key});
-
+  RestaurantListViewItem({super.key,required this.listindex});
+  final listindex;
   @override
   State<RestaurantListViewItem> createState() => _RestaurantListViewItemState();
 }
@@ -34,30 +33,19 @@ class _RestaurantListViewItemState extends State<RestaurantListViewItem> {
       ),
       child: Row(
         children: [
-          RestaurantImage(),
+          RestaurantImage(listindex: widget.listindex,),
           Container(
             width: 200,
             height: 105,
             child: Column(
               children: [
-                RestaurantTitle(),
-                
-                RestaurantStar(),
-                
-                RestaurantOrder(),
+                RestaurantTitle(listindex: widget.listindex,),
+                RestaurantStar(listindex: widget.listindex,),
+                RestaurantOrder(listindex: widget.listindex,),
               ],
             ),
           ),
-          Container(
-            margin: EdgeInsets.only(bottom: 70),
-            //alignment: Alignment.topLeft,
-            width: 50,
-            height: 40,
-            decoration: BoxDecoration(
-              color: Colors.black,
-              borderRadius: BorderRadius.only(topRight: Radius.circular(20), bottomLeft: Radius.circular(20))
-            ),
-          ),
+          RestaurantNew(listindex: widget.listindex,),
         ],
       ),
     );

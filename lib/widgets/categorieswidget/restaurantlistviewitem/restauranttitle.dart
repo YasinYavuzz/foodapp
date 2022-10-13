@@ -5,13 +5,14 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class RestaurantTitle extends StatefulWidget {
-  const RestaurantTitle({super.key});
-
+  RestaurantTitle({super.key,required this.listindex});
+  final listindex;
   @override
   State<RestaurantTitle> createState() => _RestaurantTitleState();
 }
 
 class _RestaurantTitleState extends State<RestaurantTitle> {
+  List<String> restauranttitle = ["Burger King","Pizzania","Pankcake"];
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -19,7 +20,7 @@ class _RestaurantTitleState extends State<RestaurantTitle> {
       width: 90,
       height: 20,
       child: Text(
-        'Burger King',
+        '${restauranttitle[widget.listindex]}',
         style: GoogleFonts.inter(
           color: Color(0xff010E16),
           fontSize: 15,

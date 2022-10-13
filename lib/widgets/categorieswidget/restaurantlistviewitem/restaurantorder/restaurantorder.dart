@@ -6,8 +6,8 @@ import 'package:foodapp/widgets/categorieswidget/restaurantlistviewitem/restaura
 import 'package:foodapp/widgets/categorieswidget/restaurantlistviewitem/restaurantorder/restaurantordertimekm.dart';
 
 class RestaurantOrder extends StatefulWidget {
-  const RestaurantOrder({super.key});
-
+  RestaurantOrder({super.key,required this.listindex});
+  final listindex;
   @override
   State<RestaurantOrder> createState() => _RestaurantOrderState();
 }
@@ -22,7 +22,7 @@ class _RestaurantOrderState extends State<RestaurantOrder> {
       child: Row(
         children: [
           RestaurantClockIcon(),
-          ResaturantOrderTimeKm()
+          ResaturantOrderTimeKm(listindex: widget.listindex,)
         ],
       ),
     );

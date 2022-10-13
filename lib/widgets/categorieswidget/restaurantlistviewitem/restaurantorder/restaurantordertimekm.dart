@@ -5,13 +5,14 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ResaturantOrderTimeKm extends StatefulWidget {
-  const ResaturantOrderTimeKm({super.key});
-
+  ResaturantOrderTimeKm({super.key,required this.listindex});
+  final listindex;
   @override
   State<ResaturantOrderTimeKm> createState() => _ResaturantOrderTimeKmState();
 }
 
 class _ResaturantOrderTimeKmState extends State<ResaturantOrderTimeKm> {
+  List<String> restaurantordertimekm = ["25-35 mins   . 8 km","20-25 mins   . 7 km","25-35 mins   . 8 km"];
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -21,7 +22,7 @@ class _ResaturantOrderTimeKmState extends State<ResaturantOrderTimeKm> {
       height: 20,
       child: Text(
         //textAlign: TextAlign.center,
-        '25-35 mins   . 8 km',
+        '${restaurantordertimekm[widget.listindex]}',
         style: GoogleFonts.inter(
           color: Color(0xffB3B3B3),
           fontSize: 14,
