@@ -71,6 +71,7 @@ flutter:
     - assets/categoriesassets/bottomnavigationbar/
     - assets/detailsassets/backgroundtopimage/backgroundtopimage.png
     - assets/detailsassets/topiconsbutton/
+    - assets/detailsassets/menu/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
