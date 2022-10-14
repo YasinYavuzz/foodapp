@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:foodapp/widgets/loginwidget/loginbutton/loginbutton.dart';
 import 'package:foodapp/widgets/loginwidget/logintext/logincreateaccountext.dart';
 import 'package:foodapp/widgets/loginwidget/logintext/loginhaveaccounttext.dart';
 import 'package:foodapp/widgets/loginwidget/logintext/loremtext.dart';
-
 import '../widgets/loginwidget/loginbackground/loginbackground.dart';
 import '../widgets/loginwidget/loginbackground/loginfoodimage.dart';
 
