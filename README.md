@@ -1,0 +1,5 @@
+# foodapp![login](https://user-images.githubusercontent.com/99301596/195839777-25d710cc-3aad-476c-8636-7cf735ecdeb5.png)
+![category](https://user-images.githubusercontent.com/99301596/195839795-8c3ce69b-1c47-41bc-ba50-e940ea6949aa.png)
+![detail](https://user-images.githubusercontent.com/99301596/195839803-a43943a3-4206-4dd3-ad93-885f389fb709.png)
+![gitkraken1](https://user-images.githubusercontent.com/99301596/195839812-79e622eb-cb04-443f-aefa-516068482235.png)
+![gitkraken2](https://user-images.githubusercontent.com/99301596/195839819-b4667351-d248-4aec-ad58-f2a88dbf1c9a.png)
